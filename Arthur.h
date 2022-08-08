@@ -51,8 +51,10 @@ void print()
 matrix operator+(const matrix& b)
 {
   matrix mat;
-  
   if(sizeof(mat.matr) != sizeof(this->matr))
+  return mat;
+	
+
 
   for(auto i = 0; i < m; i++)
   {
@@ -68,7 +70,9 @@ matrix operator+(const matrix& b)
 matrix operator*(const matrix& b)
 {
   matrix mat;
-
+ if(sizeof(mat.matr) != sizeof(this->matr))
+  return mat;
+	
  for(auto i = 0; i < m; i++)
  {
  	for(auto j = 0; j < m; j++)
