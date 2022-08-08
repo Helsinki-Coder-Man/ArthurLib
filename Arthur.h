@@ -82,4 +82,4 @@ matrix operator*(const matrix& b)
 
 };
 
-double theta(const vector& a, const vector& b);
+
