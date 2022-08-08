@@ -1,5 +1,18 @@
 #include <array>
+#include <iostream>
 
+template<typename T>
+T sum(int lB, int hB, T term)
+{
+  T sum = 0;
+  
+  for(int i = lB; i < hB; i++)
+  {
+  sum += term;
+  }
+
+  return sum;
+}
 
 struct vector
 {
@@ -9,8 +22,11 @@ struct vector
   vector();  
   
   vector operator+(const vector& b);
-  vector operator*(int b);
+  vector operator*(const vector& b);
 };
+
+
+double theta(const vector& a, const vector& b);
 
 template<unsigned int n, unsigned int m>
 struct matrix
@@ -35,6 +51,8 @@ void print()
 matrix operator+(const matrix& b)
 {
   matrix mat;
+  
+  if(sizeof(mat.matr) != sizeof(this->matr))
 
   for(auto i = 0; i < m; i++)
   {
@@ -63,3 +81,5 @@ matrix operator*(const matrix& b)
 }
 
 };
+
+double theta(const vector& a, const vector& b);

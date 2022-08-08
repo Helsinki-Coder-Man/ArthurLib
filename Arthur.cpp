@@ -1,6 +1,6 @@
 #include "Arthur.h"
 #include <iostream>
-
+#include <cmath>
 
 vector::vector(double d, double m) : direction(d), magnitude(m) {}
 
@@ -18,9 +18,19 @@ vector vector::operator+(const vector& b)
   return vec;
 }
 
-vector vector::operator*(int b)
+vector vector::operator*(const vector& b)
 {
   vector vec;
-  vec.direction = this->direction * b;
+  vec.direction += this->direction * b.direction;
+  vec.magnitude += this->magnitude * b.magnitude;
   return vec;
+}
+
+double theta(const vector& a, const vector& b)
+{
+   double ah = a.direction + a.magnitude;
+   double bh = b.direction + b.magnitude; 
+
+   double t = atan2(ah,bh) * 57.2957795;
+  return t;
 }
