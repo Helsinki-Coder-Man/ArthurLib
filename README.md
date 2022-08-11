@@ -5,10 +5,10 @@ ArthurLib is a work-in-progress Linear Algebra Library. With Matrices,Vectors an
 
 Current features:
 
-- Vector struct : Includes two scalar variables, Direction and magnitude.
+- Vector class : Includes two scalar variables, Direction and magnitude.
   - Ability to add and multiply
   
-- Matrix struct : Has a two dimensional array using standard arrays.
+- Matrix class : Has a two dimensional array using standard arrays.
   - Ability to add and multiply
 
 - Trigonometry
