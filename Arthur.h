@@ -14,8 +14,10 @@ T sum(int lB, int hB, T term)
   return sum;
 }
 
-struct vector
+class vector
 {
+public:
+	
   double direction,magnitude;
   
   vector(double d, double m);
@@ -29,24 +31,12 @@ struct vector
 double theta(const vector& a, const vector& b);
 
 template<unsigned int n, unsigned int m>
-struct matrix
+class matrix
 { 
+public:
   std::array<std::array<int,n>,m> matr;
 
 //These definitions must be inline due to the template parameters :/
-
-void print()
-{
-  for(int i = 0; i < m;i++)
-  {
-    for(int j = 0; j < n; j++)
-    {
-      std::cout << matr[j][i] << ',';
-    }
-    std::cout << '\n';
-  }
-
-}
 
 matrix operator+(const matrix& b)
 {
