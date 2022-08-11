@@ -1,11 +1,11 @@
 # ArthurLib
 
-ArthurLib is a work-in-progress Linear Algebra Library. With Matrices,Vectors and some trigonomic frunctions.
+ArthurLib is a work-in-progress Linear Algebra Library. With Matrices,Vectors and some trigonomic functions.
 (A full length manual will be written at a later date)
 
 Current features:
 
-- Vector class : Includes two scalar variables, Direction and magnitude.
+- Vector class : Includes two scalar variables, Direction and Magnitude.
   - Ability to add and multiply
   
 - Matrix class : Has a two dimensional array using standard arrays.
