@@ -2,6 +2,19 @@
 #include <iostream>
 #include <cmath>
 
+double sum(int lB, int hB, double term)
+{
+  double sum = 0;
+  
+  for(int i = lB; i < hB; i++)
+  {
+  sum += term;
+  }
+
+  return sum;
+}
+
+
 vector::vector(double d, double m) : direction(d), magnitude(m) {}
 
 vector::vector()
