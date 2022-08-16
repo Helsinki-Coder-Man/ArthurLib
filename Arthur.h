@@ -2,17 +2,8 @@
 #include <iostream>
 
 
-double sum(int lB, int hB, double term)
-{
-  double sum = 0;
-  
-  for(int i = lB; i < hB; i++)
-  {
-  sum += term;
-  }
+double sum(int lB, int hB, double term);
 
-  return sum;
-}
 
 class vector
 {
