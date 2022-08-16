@@ -1,10 +1,10 @@
 #include <array>
 #include <iostream>
 
-template<typename T>
-T sum(int lB, int hB, T term)
+
+double sum(int lB, int hB, double term)
 {
-  T sum = 0;
+  double sum = 0;
   
   for(int i = lB; i < hB; i++)
   {
