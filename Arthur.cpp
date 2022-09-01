@@ -41,8 +41,8 @@ vector vector::operator*(const vector& b)
 
 double theta(const vector& a, const vector& b)
 {
-   double ah = a.direction + a.magnitude;
-   double bh = b.direction + b.magnitude; 
+   double ah = sqrt((pow(a.direction,2) + pow(a.magnitude,2)));
+   double bh = sqrt((pow(b.direction,2) + pow(b.magnitude,2)));
 
    double t = atan2(ah,bh) * 57.2957795;
   return t;
