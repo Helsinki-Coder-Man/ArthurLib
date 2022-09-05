@@ -14,7 +14,14 @@ double sum(int lB, int hB, double term)
   return sum;
 }
 
+double deriv(double x ,double (*func)(double)){
+	return (func(x + h) - func(x - h)) / 2*h;
+}
 
+double aderiv(double x, double (*func)(double)){
+	double pFunc = deriv(x,func);
+	return x - func(x)/pFunc;
+}
 vector::vector(double d, double m) : direction(d), magnitude(m) {}
 
 vector::vector()

@@ -1,9 +1,9 @@
 #include <array>
 #include <iostream>
 
+#define h pow(10,-5)
 
 double sum(int lB, int hB, double term);
-
 
 class vector
 {
@@ -20,6 +20,10 @@ public:
 
 
 double theta(const vector& a, const vector& b);
+
+double deriv(double x, double (*func)(double));
+
+double aderiv(double x, double (*func)(double));
 
 template<unsigned int n, unsigned int m>
 class matrix
