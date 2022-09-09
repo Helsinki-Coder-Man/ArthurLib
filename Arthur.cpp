@@ -25,6 +25,18 @@ double aderiv(double x, double (*func)(double)){
 
 double integral(double (*f)(double x), double a, double b, int n);
 
+double integral(double (*f)(double x), double a, double b, int n){
+	double step = (b -a) / n;
+	double area = 0.0;
+	
+	 for(int i = 0; i < n; i++)
+	 area += (f(a + (i + 0.5) * step) * step;
+	
+ return area;
+}
+
+
+
 vector::vector(double d, double m) : direction(d), magnitude(m) {}
 
 vector::vector()
