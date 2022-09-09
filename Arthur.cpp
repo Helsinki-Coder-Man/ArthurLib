@@ -22,6 +22,9 @@ double aderiv(double x, double (*func)(double)){
 	double pFunc = deriv(x,func);
 	return x - func(x)/pFunc;
 }
+
+double integral(double (*f)(double x), double a, double b, int n);
+
 vector::vector(double d, double m) : direction(d), magnitude(m) {}
 
 vector::vector()
