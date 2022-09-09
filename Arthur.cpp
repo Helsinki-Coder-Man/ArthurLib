@@ -23,7 +23,6 @@ double aderiv(double x, double (*func)(double)){
 	return x - func(x)/pFunc;
 }
 
-double integral(double (*f)(double x), double a, double b, int n);
 
 double integral(double (*f)(double x), double a, double b, int n){
 	double step = (b -a) / n;
