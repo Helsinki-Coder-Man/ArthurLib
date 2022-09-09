@@ -25,6 +25,8 @@ double deriv(double x, double (*func)(double));
 
 double aderiv(double x, double (*func)(double));
 
+double integral(double (*f)(double x), double a, double b, int n);
+
 template<unsigned int n, unsigned int m>
 class matrix
 { 
