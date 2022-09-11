@@ -29,7 +29,7 @@ double integral(double (*f)(double x), double a, double b, int n){
 	double area = 0.0;
 	
 	 for(int i = 0; i < n; i++)
-	 area += (f(a + (i + 0.5) * step) * step;
+	 area += (f(a + (i + 0.5) * step) * step);
 	
  return area;
 }
